@@ -1,0 +1,104 @@
+body {
+  font-family: "Rubik", sans-serif;
+}
+
+header {
+  height: 6vh;
+  background-color: hsl(187, 48%, 64%);
+  color: #fff;
+}
+
+#page-title {
+  margin: 0, auto;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.2em;
+  font-size: 25px;
+}
+
+.welcome-msg {
+  font-size: 17px;
+}
+
+#upload-download-section {
+  height: auto;
+}
+
+#upload,
+#download {
+  min-height: 500px;
+  height: auto;
+}
+
+.title {
+  background-color: hsl(187, 48%, 90%);
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.2em;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+hr {
+  width: 100%;
+  border-top: 3px solid hsl(187, 48%, 30%);
+  margin: 0 auto;
+}
+
+form {
+  margin-top: 15px;
+}
+
+.btn {
+  border-radius: 7px;
+  background-color: hsl(187, 48%, 64%);
+  border-color: hsl(187, 48%, 64%);
+  letter-spacing: 0.1em;
+  font-size: 13px;
+}
+
+footer {
+  height: 6vh;
+  width: 100%;
+  background-color: hsl(187, 48%, 64%);
+  color: #fff;
+  position: fixed;
+  bottom: 0;
+}
+
+#footer-msg {
+  font-size: 13px;
+}
+
+.list-group-item {
+  border: none;
+  color: #000;
+  position: relative;
+}
+
+.list-group-item-info {
+  background-color: hsl(187, 48%, 90%);
+}
+
+.dl-del-btn-group {
+  position: absolute;
+  right: 2px;
+}
+
+#download-btn {
+  background: hsl(127, 45%, 53%);
+}
+
+#delete-btn {
+  background: rgb(211, 91, 91);
+}
+
+#download-btn,
+#delete-btn {
+  text-decoration: none;
+}
+
+#download-btn:hover,
+#delete-btn:hover {
+  color: #fff;
+}

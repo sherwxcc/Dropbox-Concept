@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drop box concepts</title>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&family=Rubik&display=swap" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/3a853d7f81.js" crossorigin="anonymous"></script>
+    <!-- Custom CSS -->
+    <link href="stylesheet.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="d-flex align-items-center">
+        <h1 class="fw-bolder mx-3 mt-2" id="page-title">DROP BOX <i class="fas fa-box-open"></i></h1>
+    </header>
+        <div>
+            <p class="welcome-msg mx-3 my-2">Welcome to dropbox!</p>
+        </div>
+        <div class="container-fluid">
+            <div id="upload-download-section" class="row row-cols-2">
+                <div id="upload" class="px-3 my-2 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                    <p class="title py-1 px-4 my-2"><i class="fas fa-cloud-upload-alt"></i> UPLOAD</p>
+                    <hr>
+                    <form type='file' method='POST' action='/form' encType="multipart/form-data" class="px-4" id="upload-form">
+                        <label class="mt-1 btn btn-info text-white" for="file-upload">Choose a folder<input type='file' name='file' placeholder="choose a folder" id="file-upload"></label>
+                        <button type='submit' value='submit' name='submit' class='btn btn-secondary text-white ms-2 mt-1' disabled>Submit</button>
+                    </form>
+                    <br>
+                    <div id="upload-spec" class="px-4 my-2">
+                        <p>Selected File :</p>
+                        <div id="upload-spec-detail">
+                        </div>
+                    </div>
+                </div>
+                <div id="download" class="px-3 my-2 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                    <p class="title py-1 px-4 my-2"><i class="fas fa-cloud-download-alt"></i> DOWNLOAD</p>
+                    <hr>
+                    <div class="list-group">
+                        </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <footer>
+        <p id="footer-msg" class="mx-3 my-3 text-end">Dropbox Concept / Sherman 2021</p>
+    </footer>
+
+  <!-- Bootstrap Script -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <!-- jQuery Script -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <!-- Custom script -->
+  <script src="script.js"></script>
+</body>
+</html>
